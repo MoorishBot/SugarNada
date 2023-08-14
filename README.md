@@ -14,6 +14,10 @@ This project redefines the way health technologies collaborate, fostering a more
 4-	Any Amazon's Echo Device will work.
 
 # How to:
+# SugarMate
+- Create a free account at https://www.sugarmate.io/
+- write down the user name and the password, we will need them for Google Apps to make the API calls.
+- Now Let's open Chrome, and login into Sugarmate.io, 
 How to Add a Script to Google Sheets
 1. Open your Google Sheets workbook
 2. Go to Extensions > Apps Script
