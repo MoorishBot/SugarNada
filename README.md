@@ -5,7 +5,7 @@ This project redefines the way health technologies collaborate, fostering a more
 
 # What is needed?
 
-1-	Google Sheet (Free)
+1-	Google Sheet (Free Google Apps)
 
 2-	Free Sugarmate.io account (Free)
 
@@ -19,8 +19,9 @@ How to Add a Script to Google Sheets
 2. Go to Extensions > Apps Script
 ![image](https://github.com/MoorishBot/SugarNada/assets/89058912/7c097bf2-b46c-4912-a6e5-6accccd0db86)
 3. Apps Script is a tool created by Google that allows you to run code scripts in your spreadsheet.There are several things we can use Apps Script for such as creating new functions, adding custom menus or sidebars, building add-ons, integrating with other Google Workspace applications and a lot more.
-4. ![image](https://github.com/MoorishBot/SugarNada/assets/89058912/9a4eb1ee-ed6b-44a7-b580-3b1789cf9912)
-5. In the Script Editor, paste the script below
+ ![image](https://github.com/MoorishBot/SugarNada/assets/89058912/9a4eb1ee-ed6b-44a7-b580-3b1789cf9912)
+   
+4. In the Script Editor, paste the script below
 
 function SugarMate() {
 
