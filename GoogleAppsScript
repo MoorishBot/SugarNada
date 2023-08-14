@@ -1,0 +1,82 @@
+function SugarMate() {
+
+// Create a request options object.
+
+var requestOptions = {
+
+method: 'POST',
+
+redirect: 'follow'
+
+};
+
+// Make the request to the SugarMate API.
+
+var response = UrlFetchApp.fetch("https://sugarmate.io/oauth/web?email=sugarmateuserID&password=sugarmatePassword", requestOptions);
+
+// Get the response text.
+
+var result = response.getContentText();
+
+// Print the result to the console.
+
+//Logger.log(result);
+
+var responseJSON = JSON.parse(response.getContentText());
+
+var accessToken = responseJSON["access_token"];
+
+//Logger.log(accessToken);
+
+var date = new Date();
+
+var nonce = Math.floor((date.getTime()/1000)).toString();
+
+var url = 'https://sugarmate.io/api/v2/accounts/PUT_ACCOUNT_ID_HERE/readings?feed_last_updated=' + nonce;
+
+var headers = {
+
+'Authorization': 'Bearer ' + accessToken
+
+};
+
+var response = UrlFetchApp.fetch(url, {
+
+'method': 'GET',
+
+'headers': headers
+
+});
+
+if (response.getResponseCode() == 200) {
+
+var readings = JSON.parse(response.getContentText());
+
+var responseJSON = JSON.parse(response.getContentText());
+
+const length = responseJSON.readings.length;
+
+Logger.log(length);
+
+var val = responseJSON['readings'][length-1]['val'];
+
+Logger.log(val);
+
+if (val < 70)
+
+{
+
+var urlWEB = 'VOICE_MONKEY_WEBHOOK_HERE';
+
+var response = UrlFetchApp.fetch(urlWEB, {'method': 'POST'});
+
+} else {
+
+// Do nothing
+}
+
+Logger.log(responseJSON);
+
+Logger.log(nonce);
+
+}}
