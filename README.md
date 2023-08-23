@@ -26,6 +26,8 @@ How to Add a Script to Google Sheets
  ![image](https://github.com/MoorishBot/SugarNada/assets/89058912/9a4eb1ee-ed6b-44a7-b580-3b1789cf9912)
    
 4. In the Script Editor, paste the script below
+5. make sure you update your credentials by the ones you created for SugarMate, they will be used to authenticate.
+6. Then create an account in VoiceMonkey, connect it to your Echo Dot,and set up the message you want, then copy the URL for your WebHook and replace it in the code below (VOICE_MONKEY_WEBHOOK_HERE)
 
 function SugarMate() {
 
