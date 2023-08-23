@@ -9,7 +9,7 @@ This project redefines the way health technologies collaborate, fostering a more
 
 2-	Free Sugarmate.io account (Free)
 
-3-	 VoiceMonkey.io @2.99
+3-	 VoiceMonkey.io $2.99/M
 
 4-	Any Amazon's Echo Device will work.
 
